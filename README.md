@@ -1,0 +1,2 @@
+# Databricks_dbt-Lakehouse_Data_Engineering_Project
+End-to-end Lakehouse project using Databricks, dbt, PySpark, Delta Lake &amp; Auto Loader. Features dynamic metadata-driven ingestion, automated pipelines, Bronze-Silver-Gold architecture, schema evolution, data quality, and dimensional modeling with dynamic fact &amp; dimension tables, dbt models, dbt macros, dbt seeds, dbt snapshots &amp; dbt tests.
