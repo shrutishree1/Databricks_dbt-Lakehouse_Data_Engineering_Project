@@ -1,0 +1,27 @@
+product_id,product_name,category,price,cost,stock_quantity,product_status
+P001,Laptop Pro 14,Electronics,75000,60000,12,active
+P002,Wireless Mouse,Electronics,1200,700,50,active
+P003,Mechanical Keyboard,Electronics,3500,2200,25,active
+P004,USB-C Hub,Electronics,2200,1400,30,active
+P005,Monitor 24,Electronics,14500,11000,8,active
+P006,Office Chair,Furniture,12000,8500,10,active
+P007,Standing Desk,Furniture,22000,16000,5,active
+P008,Desk Lamp,Furniture,1800,900,40,active
+P009,Notebook,Stationery,250,100,100,active
+P010,Pen Pack,Stationery,180,60,200,active
+P011,Backpack,Accessories,2500,1400,35,active
+P012,Water Bottle,Accessories,900,450,60,active
+P013,Headphones,Electronics,4500,2800,20,active
+P014,Webcam,Electronics,3200,1900,18,active
+P015,Power Bank,Electronics,1800,1100,45,active
+P016,Phone Stand,Accessories,700,300,70,active
+P017,Tablet,Electronics,28000,22000,7,active
+P018,Calculator,Stationery,650,300,25,active
+P019,Coffee Mug,Kitchen,550,220,80,active
+P020,Air Fryer,Kitchen,8500,6200,6,active
+P021,Travel Adapter,Accessories,1500,800,22,inactive
+P022,Bluetooth Speaker,Electronics,3800,2400,0,active
+P023,Sticky Notes,Stationery,120,40,150,active
+P024,Keyboard Cover,Accessories,450,180,55,active
+P025,External SSD,Electronics,9000,6800,9,active
+P026,Mystery Item,,999,500,10,active

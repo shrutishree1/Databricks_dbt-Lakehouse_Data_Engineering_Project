@@ -1,0 +1,32 @@
+customer_id,customer_name,email,city,state,signup_date,customer_status
+C001,Aarav Sharma,aarav@gmail.com,Ahmedabad,Gujarat,2025-01-05,active
+C002,Priya Patel,priya@gmail.com,Mumbai,Maharashtra,2025-01-08,active
+C003,Rohan Mehta,rohan@gmail.com,Pune,Maharashtra,2025-01-12,active
+C004,Neha Singh,neha@gmail.com,Delhi,Delhi,2025-01-15,inactive
+C005,Vikram Shah,vikram@gmail.com,Surat,Gujarat,2025-01-20,active
+C006,Ananya Iyer,ananya@gmail.com,Bengaluru,Karnataka,2025-01-25,active
+C007,Karan Verma,karan@gmail.com,Jaipur,Rajasthan,2025-02-01,active
+C008,Isha Kapoor,isha@gmail.com,Delhi,Delhi,2025-02-04,active
+C009,Aditya Rao,aditya@gmail.com,Hyderabad,Telangana,2025-02-08,active
+C010,Meera Joshi,meera@gmail.com,Indore,Madhya Pradesh,2025-02-12,active
+C011,Dev Malhotra,dev@gmail.com,Chandigarh,Chandigarh,2025-02-15,active
+C012,Sneha Desai,sneha@gmail.com,Vadodara,Gujarat,2025-02-18,active
+C013,Arjun Nair,arjun@gmail.com,Kochi,Kerala,2025-02-20,active
+C014,Pooja Gupta,pooja@gmail.com,Lucknow,Uttar Pradesh,2025-02-22,active
+C015,Rahul Bansal,rahul@gmail.com,Noida,Uttar Pradesh,2025-03-01,active
+C016,Simran Kaur,simran@gmail.com,Amritsar,Punjab,2025-03-03,active
+C017,Nitin Yadav,nitin@gmail.com,Gurugram,Haryana,2025-03-05,active
+C018,Kavya Menon,kavya@gmail.com,Kochi,Kerala,2025-03-07,active
+C019,Manish Jain,manish@gmail.com,Jaipur,Rajasthan,2025-03-10,inactive
+C020,Tanya Roy,,Kolkata,West Bengal,2025-03-12,active
+C021,Sahil Khan,sahil@gmail.com,Bhopal,Madhya Pradesh,2025-03-15,active
+C022,Nisha Agarwal,nisha@gmail.com,Kanpur,Uttar Pradesh,2025-03-18,active
+C023,Varun Sethi,varun@gmail.com,Delhi,Delhi,2025-03-20,active
+C024,Riya Chawla,riya@gmail.com,Mumbai,Maharashtra,2025-03-22,active
+C025,Yash Thakur,yash@gmail.com,Shimla,Himachal Pradesh,2025-03-25,active
+C026,Aditi Bose,aditi@gmail.com,Kolkata,West Bengal,2025-03-28,active
+C027,Mohit Soni,mohit@gmail.com,Jodhpur,Rajasthan,2025-04-01,active
+C028,Diya Reddy,diya@gmail.com,Hyderabad,Telangana,2025-04-03,active
+C029,Kabir Ali,kabir@gmail.com,Lucknow,Uttar Pradesh,2025-04-05,active
+C030,Aman Kapoor,aman@gmail.com,Delhi,Delhi,2025-04-08,active
+C005,Vikram Shah,vikram@gmail.com,Surat,Gujarat,2025-01-20,active
