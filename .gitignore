@@ -1,0 +1,27 @@
+# Python-generated files
+__pycache__/
+*.py[ocd]
+build/
+dist/
+wheels/
+*.egg-info/
+
+# Virtual environments
+.venv/
+
+
+# Secrets / environment files
+.env
+.env.*
+profiles.yml
+*.key
+*.pem
+*.token
+
+# Databricks
+.databricks/
+
+# dbt generated files
+target/
+dbt_packages/
+logs/
