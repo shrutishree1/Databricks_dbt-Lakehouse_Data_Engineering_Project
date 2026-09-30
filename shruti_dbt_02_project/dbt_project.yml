@@ -32,5 +32,11 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   shruti_dbt_02_project:
     # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: view
+    bronze:
+      +schema: bronze
+    stage:
+      +materialized: table
+      +schema: stage
+    silver:
+      +materialized: table
+      +schema: silver

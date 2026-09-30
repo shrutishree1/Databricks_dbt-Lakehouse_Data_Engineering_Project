@@ -1,0 +1,10 @@
+sources:
+  - name: bronze
+    database: dbt_project_2  
+    schema: bronze  
+    tables:
+      - name: customers
+      - name: order_item
+      - name: orders
+      - name: payments
+      - name: products
