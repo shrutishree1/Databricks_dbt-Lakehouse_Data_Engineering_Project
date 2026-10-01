@@ -1,0 +1,44 @@
+# practicing built-in tests:
+
+## not null and unique
+
+models:
+    - name: stg_customers
+      columns:
+        - name: customer_id
+          data_tests:
+            - not_null
+            - unique
+        - name: order_status
+          data_tests:
+            - accepted_values:
+                arguments:
+                values: ["delivered","shipped","cancelled","confirmed","returned","pending","weird_status"]
+                 
+    - name: stg_products
+      columns:
+        - name: product_id
+          data_tests:
+            - not_null
+            - unique
+    
+    - name: stg_order_items
+      columns:
+        - name: order_item_id
+          data_tests:
+            - not_null
+            - unique
+
+    - name: stg_payments
+      columns:
+        - name: payment_id
+          data_tests:
+           - not_null
+           - unique
+
+    - name: stg_orders
+      columns:
+        - name: order_id
+          data_tests:
+           - not_null
+           - unique
