@@ -4,7 +4,7 @@ sources:
     schema: bronze  
     tables:
       - name: customers
-      - name: order_item
+      - name: order_items
       - name: orders
       - name: payments
       - name: products
