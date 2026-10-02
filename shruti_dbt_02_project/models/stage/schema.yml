@@ -1,6 +1,6 @@
 # practicing built-in tests:
 
-## not null and unique
+## not null, unique, accepted_values and relationships
 
 models:
     - name: stg_customers
@@ -9,25 +9,39 @@ models:
           data_tests:
             - not_null
             - unique
-        - name: order_status
-          data_tests:
-            - accepted_values:
-                arguments:
-                values: ["delivered","shipped","cancelled","confirmed","returned","pending","weird_status"]
-                 
+
+## stg_products
+
     - name: stg_products
       columns:
         - name: product_id
           data_tests:
             - not_null
             - unique
-    
+
+## stg_order_items
+
     - name: stg_order_items
       columns:
         - name: order_item_id
           data_tests:
             - not_null
             - unique
+        - name: order_id
+          data_tests:
+            - relationships:
+                arguments:
+                    to: ref("stg_orders")
+                    field: order_id
+        - name: product_id
+          data_tests:
+            - relationships:
+                arguments:
+                  to: ref("stg_products")
+                  field: product_id
+        
+
+## stg_payments
 
     - name: stg_payments
       columns:
@@ -36,9 +50,23 @@ models:
            - not_null
            - unique
 
+## stg_orders
+
     - name: stg_orders
       columns:
         - name: order_id
           data_tests:
            - not_null
            - unique
+        - name: order_status
+          data_tests:         
+           - accepted_values:
+                arguments:
+                    values: ["delivered","shipped","cancelled","confirmed","returned","pending","Unknown"]
+        - name: customer_id
+          data_tests:
+           - relationships:
+                arguments:
+                  to: ref("stg_customers")
+                  field: customer_id
+                 
