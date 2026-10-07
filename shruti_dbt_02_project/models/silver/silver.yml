@@ -1,0 +1,84 @@
+models:
+
+# SILVER CUSTOMER
+    - name: silver_customers
+      description: "Cleaned and deduplicated customer data"
+      columns:
+        - name: customer_id
+          data_tests:
+            - not_null
+            - unique
+
+# SILVER PRODUCTS
+    - name: silver_products
+      description: "Added one new column profit_margin_percent"
+      columns:
+        - name: product_id
+          data_tests:
+            - not_null
+            - unique
+
+# SILVER ORDERS
+    - name: silver_orders
+      description: "Orders enriched with Customers information"
+      columns:
+        - name: order_id
+          data_tests:
+            - not_null
+            - unique
+        - name: customer_id
+          data_tests:
+            - not_null
+
+# SILVER ORDER ITEMS
+    - name: silver_order_items
+      description: "Cleaned Order_item data enriched with Orders and Products detail"
+      columns:
+        - name: order_item_id
+          data_tests:
+            - not_null
+            - unique
+        - name: order_id
+          data_tests:
+            - not_null
+            - relationships:
+                 to: ref("silver_orders")
+                 field: order_id
+        - name: product_id
+          data_tests:
+             - not_null
+             - relationships:
+                 to: ref("silver_products")
+                 field: product_id
+            
+        - name: quantity
+          data_tests:
+            - not_null
+            - test_positive
+
+## SILVER PAYMENTS
+    - name: silver_payments
+      description: "Cleaned Payment data enriched with Orders and Customer details"
+      columns:
+        - name: payment_id
+          data_tests:
+            - not_null
+            - unique
+        - name: order_id
+          data_tests:
+            - not_null
+            - relationships:
+                arguments:
+                  to: ref("silver_orders")
+                  field: order_id
+        - name: customer_id
+          data_tests:
+            - not_null
+        - name: payment_amount
+          data_tests:
+            - not_null
+        - name: payment_status
+          data_tests:
+            - accepted_values:
+                arguments:
+                  values: ["Paid", "Failed", "Refunded", "Pending"]
