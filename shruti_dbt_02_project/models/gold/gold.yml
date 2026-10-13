@@ -45,3 +45,19 @@ models:
         - name: net_sales
           data_tests:
             - not_null
+            - gold_test_positive
+        - name: gross_amount
+          data_tests:
+            - not_null
+            - gold_test_positive
+        - name: discount_amount
+          data_tests:
+            - not_null
+            - gold_test_positive
+        - name: total_cost
+          data_tests:
+            - not_null
+            - gold_test_positive
+        - name: gross_profit
+          data_tests:
+            - not_null

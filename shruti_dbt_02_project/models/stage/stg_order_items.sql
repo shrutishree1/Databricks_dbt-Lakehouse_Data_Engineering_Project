@@ -11,9 +11,15 @@ SELECT
     as decimal(10,2)) as gross_amount,
     
     cast(
-    cast(unit_price as decimal(10,2)) * cast(quantity as int) -
-    cast(discount as decimal(10,2)) as decimal(10,2)
-    ) as net_amount
+    cast(discount as decimal(10,2))
+    as decimal(10,2)
+        ) as discount_amount,
+
+    cast(
+    cast(unit_price as decimal(10,2)) * cast(quantity as int)
+    - cast(discount as decimal(10,2))
+    as decimal(10,2)
+        ) as net_amount
 
 FROM
     {{ source('bronze','order_items') }}

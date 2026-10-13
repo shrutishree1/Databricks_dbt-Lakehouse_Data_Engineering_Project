@@ -10,7 +10,7 @@ SELECT
     oi.unit_price,
     oi.discount,
     oi.gross_amount,
-    (oi.gross_amount*oi.discount)/100 as discount_amount
+    CAST(oi.discount AS DECIMAL(10,2)) AS discount_amount
 FROM
     {{ ref("stg_order_items") }} as oi
 JOIN
